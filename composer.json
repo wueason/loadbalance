@@ -1,0 +1,32 @@
+{
+  "name": "wueason/loadbalance",
+  "description": "Load balance implements in PHP",
+  "keywords": ["loadbalance", "algorithm"],
+  "homepage": "https://github.com/wueason/loadbalance",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eason Wu",
+      "email": "eason991@gmail.com",
+      "homepage": "http://wueason.github.io/"
+    }
+  ],
+  "require-dev": {
+    "php": ">=5.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.6.*",
+    "phpunit/php-code-coverage": "~2.0"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
