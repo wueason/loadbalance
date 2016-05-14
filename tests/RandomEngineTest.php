@@ -20,9 +20,10 @@ class RandomEngineTest extends TestCase
 
     public function testCanBeConstructedFromFilledArray()
     {
-        $pool = array_map(function($a){
-            return new BaseInstance($a);
+        $pool = array_map(function($instance){
+            return new BaseInstance($instance);
         }, ['A','B','C']);
+
         $lb = new RandomEngine($pool);
 
         $this->assertInstanceOf('Wueason\\LoadBalance\\RandomEngine', $lb);
