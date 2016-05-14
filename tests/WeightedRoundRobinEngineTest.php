@@ -26,11 +26,11 @@ class WeightedRoundRobinEngineTest extends TestCase
             ['name'=>'B', 'weight'=>4],
             ['name'=>'B', 'weight'=>3]]);
 
-        $c = new WeightedRoundRobinEngine($pool);
+        $lb = new WeightedRoundRobinEngine($pool);
 
-        $this->assertInstanceOf('Wueason\\LoadBalance\\WeightedRoundRobinEngine', $c);
-        $this->assertContains($c->pick(), $pool);
+        $this->assertInstanceOf('Wueason\\LoadBalance\\WeightedRoundRobinEngine', $lb);
+        $this->assertContains($lb->pick(), $pool);
 
-        return $c;
+        return $lb;
     }
 }
