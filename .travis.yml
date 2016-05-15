@@ -12,13 +12,12 @@ sudo: false
 
 before_install:
     - composer self-update
-    - cd tests
 
 install:
     - travis_retry composer install --no-interaction --prefer-source
 
 script:
-    - vendor/bin/phpunit --configuration phpunit.xml.dist --coverage-text
+    - vendor/bin/phpunit --configuration tests/phpunit.xml.dist --coverage-text
 
 notifications:
   email: false
