@@ -1,14 +1,14 @@
-# LoadBalance
+# LoadBalance [![Build Status](https://api.travis-ci.org/wueason/loadbalance.svg)](https://travis-ci.org/wueason/loadbalance)
 
 ## Installation
 
 Simply add a dependency on `wueason/loadbalance` to your project's `composer.json` file if you use [Composer](http://getcomposer.org/) to manage the dependencies of your project.
 
-Here is a minimal example of a `composer.json` file that just defines a dependency on Money:
+Here is a minimal example of a `composer.json` file that just defines a dependency on LoadBalance:
 
     {
         "require": {
-            "sebastian/money": "^1.6"
+            "wueason/loadbalance": "^1.0"
         }
     }
 

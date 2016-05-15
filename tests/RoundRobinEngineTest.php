@@ -20,14 +20,15 @@ class RoundRobinEngineTest extends TestCase
 
     public function testCanBeConstructedFromFilledArray()
     {
-        $pool = array_map(function($a){
-            return new BaseInstance($a);
+        $pool = array_map(function($instance){
+            return new BaseInstance($instance);
         }, ['A','B','C']);
-        $c = new RoundRobinEngine($pool);
 
-        $this->assertInstanceOf('Wueason\\LoadBalance\\RoundRobinEngine', $c);
-        $this->assertContains($c->pick(), $pool);
+        $lb = new RoundRobinEngine($pool);
 
-        return $c;
+        $this->assertInstanceOf('Wueason\\LoadBalance\\RoundRobinEngine', $lb);
+        $this->assertContains($lb->pick(), $pool);
+
+        return $lb;
     }
 }

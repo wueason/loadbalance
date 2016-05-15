@@ -11,7 +11,7 @@
       "homepage": "http://wueason.github.io/"
     }
   ],
-  "require-dev": {
+  "require": {
     "php": ">=5.4"
   },
   "require-dev": {
@@ -22,11 +22,5 @@
     "classmap": [
       "src/"
     ]
-  },
-  "repositories": {
-    "packagist": {
-      "type": "composer",
-      "url": "https://packagist.phpcomposer.com"
-    }
   }
 }
